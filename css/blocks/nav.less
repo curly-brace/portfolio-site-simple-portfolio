@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.nav {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__link {
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: @black;
+        transition: width 0.2s linear;
+        margin: 0 auto;
+    }
+
+    &:hover:not(.nav__link--btn) {
+        //border-color: @black;
+        &:after {
+            width: 100%;
+        }
+    }
+
+    &--btn {
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 2px solid @black;
+        transition: background-color 0.2s linear, color 0.2s linear;
+
+        &:hover {
+            background-color: @grey;
+            color: @white;
+        }
+    }
+}

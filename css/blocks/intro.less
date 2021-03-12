@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.intro {
+    margin-top: 15px;
+}
+
+.intro__inner {
+    display: flex;
+    border-bottom: 1px solid fade(@grey, 30%);
+}
+
+.intro__content {
+    margin-top: 90px;
+    width: 50%;
+
+    h1 {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 53px;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 200;
+    }
+    h3 {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        opacity: 0.7;
+    }
+}
+
+.intro__photo {
+    width: 50%;
+    height: 496px;
+
+    img {
+        max-height: 100%;
+    }
+}
+
+.social {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    display: flex;
+
+    &__btn {
+        margin-right: 10px;
+        text-decoration: none;
+        transition: transform 0.1s linear;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
